@@ -1,17 +1,23 @@
 .main {
-    margin-top: 40px;
-    padding: 20px;
-    width: 1000px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;    h1 {
-        padding-left: 20px;
-        color: white;
-    }
-    p {
-        padding: 30px;
-
-    }
+  margin-top: 40px;
+  padding: 20px;
+  width: 1000px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  h1 {
+    padding-left: 20px;
+    color: white;
+  }
+  #{&}__paragraph1 {
+    padding: 30px;
+    color: pink;
+  }
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
     &:hover {
-        background: rgba(255, 255, 255, 0.6);
-    }
+        color: white;
+    }  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
 }
