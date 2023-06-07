@@ -1,0 +1,19 @@
+@mixin flexCenter($value) {
+    @if $value == 'row' {
+        display: flex;
+        justify-content: center;
+    } @else if $value == 'column' {
+        display: flex;
+        align-items: center;
+    } @else {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 800px ) {
+        @content;
+    }
+}
