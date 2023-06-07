@@ -1,0 +1,17 @@
+.main {
+    margin-top: 40px;
+    padding: 20px;
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;    h1 {
+        padding-left: 20px;
+        color: white;
+    }
+    p {
+        padding: 30px;
+
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
