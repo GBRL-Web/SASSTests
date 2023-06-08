@@ -1,14 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'resetter';
-@import 'fontimports';
-@import 'variables';    
-@import 'functions';
-@import 'mixins';
+@import './app/scss/partials/resetter';
+@import './app/scss/partials/fontimports';
+@import './app/scss/partials/variables';    
+@import './app/scss/partials/functions';
+@import './app/scss/partials/mixins';
+@import './app/scss/components/post';
+@import'./app/scss/components/card';
+
 
 body {
     font-family: Poppins;
     background: $background-color;
     color: $primary-color;
     font-weight: weight(regular);
-    @include flexCenter(both);
+    // @include flexCenter(both);
+    width: 1000px;
+    margin: auto;
 }

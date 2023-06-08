@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import {MatMenuModule} from '@angular/material/menu';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

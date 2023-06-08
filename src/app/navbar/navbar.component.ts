@@ -1,7 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatMenuTrigger } from '@angular/material/menu';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +6,5 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  @ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger;
 
-  someMethod() {
-    this.trigger.openMenu();
-  }
 }

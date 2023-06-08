@@ -1,0 +1,35 @@
+.post {
+    margin-top: 40px;
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    h1 {
+      padding: 40px 40px 10px 20px;
+      color: white;
+    }
+    img {
+      float: left;
+      margin: 30px 20px 40px 0;
+      border-radius: 0 15px 15px 0;
+    }
+    #{&}__paragraph1 {
+      padding: 30px;
+      color: pink;
+    }
+    #{&}__paragraph2 {
+      @extend .post__paragraph1;
+      &:hover {
+        color: white;
+      }
+    }
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+    hr {
+      width: 90%;
+      margin: auto;
+      background-color: rgba(252, 0, 0, 0.356);
+      height: 5px;
+      border: 0;
+    }
+  }

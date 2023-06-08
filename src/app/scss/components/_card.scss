@@ -1,0 +1,30 @@
+@import '../partials/variables';
+.card {
+    width: 200px;
+    height: 340px;
+    background: $nav-background;
+    border: 1px solid $nav-background;
+    border-radius: 10px;
+    overflow: hidden;
+    .top {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bottom {
+        @extend .top;
+        position: relative;
+        height: 60%;
+        overflow: hidden;
+        p {
+            font-size: 11px;
+            padding: 0 10px;
+            margin: 0;                    
+        }
+        h2 {
+            background: black;
+            text-align: center;
+        }
+    }
+}
