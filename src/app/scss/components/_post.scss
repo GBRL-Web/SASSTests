@@ -2,8 +2,9 @@
     margin-top: 40px;
     width: 1000px;
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
+    border-radius: map-get($b-radius, large);
     h1 {
+      user-select: none;
       padding: 40px 40px 10px 20px;
       color: white;
     }

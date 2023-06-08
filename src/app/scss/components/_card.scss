@@ -1,30 +1,50 @@
-@import '../partials/variables';
+@import "../partials/variables";
+.card_container {
+    display:flex;
+    justify-content: space-around;
+}
 .card {
-    width: 200px;
-    height: 340px;
-    background: $nav-background;
-    border: 1px solid $nav-background;
-    border-radius: 10px;
+  width: 220px;
+  height: 340px;
+  background: $nav-background;
+  border: 1px solid $nav-background;
+  border-radius: map-get($b-radius, medium);
+  overflow: hidden;
+  .top {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin: auto;
+      height: 90%;
+      border-radius: map-get($b-radius, small);
+    }
+  }
+  .bottom {
+    @extend .top;
+    flex-direction: row;
+    position: relative;
+    height: 60%;
     overflow: hidden;
-    .top {
-        height: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    p {
+      font-size: 11px;
+      padding: 0 10px;
+      margin: 0;
     }
-    .bottom {
-        @extend .top;
-        position: relative;
-        height: 60%;
-        overflow: hidden;
-        p {
-            font-size: 11px;
-            padding: 0 10px;
-            margin: 0;                    
-        }
-        h2 {
-            background: black;
-            text-align: center;
-        }
+    h2 {
+        writing-mode:vertical-rl;
+        // text-orientation:sideways;
+      width: 50%;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      float: left;
     }
+  }
+
+  #{&}:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+  }
 }
